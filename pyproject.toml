@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelligent-particles"
+version = "0.2.0"
+description = "Composable experiments with self-propelled particles and learned policies"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+learning = ["torch>=2.4"]
+
+[project.urls]
+Repository = "https://github.com/tysun1209/intelligent-particles"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
